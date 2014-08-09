@@ -1,11 +1,13 @@
 # Plots energy sub metering over time
+#
+# (png file provided was generated in MS Windows with R 3.1.1)
 
 plot3 <- function() {
   ds <- loadDataForPlot() # Load data for plot
   
-  png(filename="plot3.png", width=480, height=480, unit="px") # Open PNG device
+  png(filename="plot3.png", width=480, height=480, unit="px", bg="transparent") # Open PNG device
   
-  par(mfrow = c(1, 1)) # Just one plot
+  par(mfrow = c(1, 1)) # Grid for just one plot
   
   plot(ds[,1], ds$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
   points(ds[,1], ds$Sub_metering_2, type="l", col="red")

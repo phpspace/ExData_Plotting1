@@ -3,11 +3,13 @@
 # - Voltage
 # - Energy sub metering
 # - Global reative power
+#
+# (png file provided was generated in MS Windows with R 3.1.1)
 
 plot4 <- function() {
   ds <- loadDataForPlot() # Load data for plot
   
-  png(filename="plot4.png", width=480, height=480, unit="px") # Open PNG device
+  png(filename="plot4.png", width=480, height=480, unit="px", bg="transparent") # Open PNG device
   
   par(mfrow = c(2, 2)) # Four plots in a 2 x 2 grid
   
