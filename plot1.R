@@ -5,7 +5,7 @@
 plot1 <- function() {
   ds <- loadDataForPlot() # Load data for plot
   
-  png(filename="plot1.png", width=480, height=480, unit="px", bg="transparent") # Open PNG device (set background to transparent)
+  png(filename="plot1.png", width=480, height=480, unit="px", bg="transparent", type="cairo") # Open PNG device (set background to transparent)
   
   par(mfrow = c(1, 1)) # Grid for just one plot
   
